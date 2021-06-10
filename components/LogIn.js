@@ -67,7 +67,7 @@ const LogIn = ({history}) =>{
                     <TextInput style={styles.input} placeholder=" Enter your username here" placeholderTextColor="#DDD" onChangeText={user => setUser(user)}/>
                     <Text></Text>
                     <Text style={styles.text}>Password</Text>
-                    <TextInput style={styles.input} placeholder=" Enter your password here" placeholderTextColor="#DDD" onChangeText={pass => setPass(pass)}/>
+                    <TextInput style={styles.input} placeholder=" Enter your password here" placeholderTextColor="#DDD" onChangeText={pass => setPass(pass)} secureTextEntry={true}/>
                     <Text></Text>
                     <View style={styles.button} >
                     <Button title="LogIn" color="white" onPress={postServer}/>

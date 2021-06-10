@@ -12,11 +12,6 @@ const Nav = ({title}) =>{
                 <Text style={styles.text}>Profile</Text>
             </Link> 
             </View>
-            <View style={styles.refresh}>
-            <Link to="/Refresh">
-                <Text style={styles.text}>Refresh</Text>
-            </Link> 
-            </View>
             <View style={styles.logout}>
             <Link to="/">
                 <Text style={styles.text}>Log Out</Text>
@@ -45,14 +40,9 @@ const styles = StyleSheet.create({
         top: window.height/22,
         left: window.width/20
     },
-
-    refresh:{
-        top: window.height/22,
-        left: window.width/3.2
-    },
     logout:{
         top: window.height/22,
-        left: window.width/1.9
+        left: window.width/1.5
     },
 })
 
